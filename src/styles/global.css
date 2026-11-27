@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-page: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-muted: #f4f7fa;
+  --text-main: #191e22;
+  --text-muted: #5c6773;
+  --accent-primary: #18466e;
+  --accent-secondary: #385168;
+  --accent-brand: #76b900;
+  --border-color: #dde3ea;
+  --shadow-card: 2px 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+body.dark-theme {
+  --bg-page: #11161c;
+  --bg-surface: #1b222c;
+  --bg-muted: #232c38;
+  --text-main: #f0f4f8;
+  --text-muted: #a0aec0;
+  --accent-primary: #1e578a;
+  --accent-secondary: #283a4b;
+  --accent-brand: #8cd600;
+  --border-color: #2f3b4c;
+  --shadow-card: 2px 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
